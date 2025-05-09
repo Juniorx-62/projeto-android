@@ -100,7 +100,10 @@ nav a {
 nav a:hover {
     background-color: var(--cor3);
     color: var(--cor5);
+}
 
+nav:active {
+    transition-duration: 0.75s;
 }
 
 main {
@@ -165,6 +168,16 @@ main img.pequena {
     max-width: 350px;
     display: block;
     margin: auto;
+}
+
+@media only screen and (max-width: 320px) {
+    nav, header {
+        font-size: 13px;
+    }
+
+    main {
+        min-width: 280px;
+    }
 }
 
 div.video {
